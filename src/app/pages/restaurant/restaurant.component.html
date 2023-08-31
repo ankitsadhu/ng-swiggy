@@ -1,0 +1,53 @@
+<div class="restaurant-page-container">
+    <div class="restaurant-info" *ngIf="restaurantData">
+        <div class="restaurant-metadata-info">
+            <div class="restaurant-metadata-left">
+                <h2 class="restaurant-name">{{restaurantData.name}}</h2>
+                <p>{{restaurantData.cuisines}}</p>
+                <p>{{restaurantData.areaName}}</p>
+            </div>
+            <div class="restaurant-metadata-right">
+                <div class="avg-rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-jewish-star" width="14" height="14" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3d9b6d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 2l3 5h6l-3 5l3 5h-6l-3 5l-3 -5h-6l3 -5l-3 -5h6z" />
+                      </svg>
+                    <div class="restaurant-rating">{{restaurantData.avgRating}}</div>
+                </div>
+                <div class="overall-rating">1K+ ratings</div>
+            </div>
+        </div>
+
+        <div class="cost-for-two-info">
+            <svg class="RestaurantTimeCost_icon__8UdT4" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="none"><circle cx="9" cy="9" r="8.25" stroke="#3E4152" stroke-width="1.5"></circle><path d="M12.8748 4.495H5.6748V6.04H7.9698C8.7948 6.04 9.4248 6.43 9.6198 7.12H5.6748V8.125H9.6048C9.3798 8.8 8.7648 9.22 7.9698 9.22H5.6748V10.765H7.3098L9.5298 14.5H11.5548L9.1098 10.57C10.2048 10.39 11.2698 9.58 11.4498 8.125H12.8748V7.12H11.4348C11.3148 6.475 10.9698 5.905 10.4298 5.5H12.8748V4.495Z" fill="#3E4152"></path></svg>
+            <h3 class="text">{{restaurantData.costForTwoMessage}}</h3>
+        </div> 
+    </div>
+    <div class="restaurant-food-items">
+        <div class="food-category accordion" *ngFor="let category of foodCategories  | keyvalue">
+            <h3>{{category.key}} ({{category?.value?.length}}) </h3> 
+            <div class="dish-item" *ngFor="let dish of foodCategories[category.key]">
+                <div class="dish-info">
+                    <p>{{dish.name}}</p>
+                    <p>₹ {{dish.price / 100}}</p>
+                </div>
+                <div class="dish-CTA">
+                    <button class="add-to-cart pd-30" *ngIf="dish.cartAddedCount == 0" (click)="addDeleteFromCart(dish, 'ADD')">ADD</button>
+                    <div class="add-to-cart pd-20 "  *ngIf="dish.cartAddedCount > 0">
+                        <button class="cart-btn" (click)="addDeleteFromCart(dish, 'SUB')">-</button>
+                        <span>{{dish.cartAddedCount}}</span>
+                        <button class="cart-btn" (click)="addDeleteFromCart(dish, 'ADD')">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-cart-drawer" *ngIf="(cartData$| async).noOfItems > 0">
+        <button class="view-cart-drawer-btn">
+            <div class="flex-2">
+                <div> {{(cartData$| async).noOfItems}} Item &nbsp;&nbsp;| &nbsp;&nbsp; ₹ {{(cartData$| async).totalPrice}}</div>
+                <div>View Cart</div>
+            </div>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="home-content">
+    <section class="offers">
+        <div class="offers-headline">
+            <h2 class="offers-header">Best offers for you</h2>
+            <div class="offers-navigator">
+                <!-- <span nz-icon nzType="left-circle" nzTheme="outline"></span>
+                <span nz-icon nzType="right-circle" nzTheme="outline"></span> -->
+            </div>
+        </div>
+        <div class="offers-carousel">
+            <!--img aspect ratio, clamp, overflow clip-->
+            <div *ngFor="let offer of offers" (click)="smoothScroll(offer?.id)">
+                <img [src]="offer.imgSrc" [alt]="offer.name" width="425" height="252"/>
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="categories-headline">
+            <h2 class="categories-header">What's on your mind?</h2>
+            <div class="categories-navigator">
+                <span nz-icon nzType="left-circle" nzTheme="outline"></span>
+                <span nz-icon nzType="right-circle" nzTheme="outline"></span>
+            </div>
+            
+        </div>
+        <div class="categories-carousel">
+            <!--img aspect ratio, clamp, overflow clip-->
+            <div *ngFor="let categorie of categories">
+                <img [src]="categorie.imgSrc" [alt]="categorie.name" width="144" height="180"/>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider"/>
+
+    <section class="online-resturants">
+        <div class="resturants-headline">
+            <h2 class="resturants-header">Restaurants with online food delivery</h2>
+            <div class="resturants-filter">
+                <button class="rating-filter four-rating-filter" [ngStyle]="{'background': isOnlyShowing4PlusRating ? 'rgba(2, 6, 12, 0.15)' : 'transparent'}" (click)="showFourPlusRateResturants()">4.0+ Ratings</button>
+                <div class="sort-container" appClickOutside (appClickOutside)="closeSortByOptions()">
+                    <button class="rating-filter sort-filter" [ngStyle]="{'background': selectedOption !== '' ? 'rgba(2, 6, 12, 0.15)' : 'transparent'}" (click)="toggleSortByOptions()">Sort By</button>
+                    <div class="radio-container" *ngIf="isSortByFilterOptionOpen">
+                        <label *ngFor="let option of radioOptions" class="radio-label">
+                          <input
+                            type="radio"
+                            name="radioOption"
+                            [value]="option.value"
+                            [(ngModel)]="selectedOption"
+                            (ngModelChange)="onSortFilterSelection()"
+                            class="radio-input"
+                          />
+                          <div class="custom-radio">{{ option.label }}</div>
+                          
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="resturants-grid">
+                <button class="resturant-card" [id]="resturant.id" *ngFor="let resturant of resturantsData" (click)="navigateToRestaurant(resturant.id)">
+                    <img class="resturant-img" [src]="BASE_CLOUDNARY_ID+resturant.cloudinaryImageId+'.webp'" width="100%" height="146" />
+                    <div class="resturant-metadata">
+                        <div class="resturant-name">{{resturant.name}}</div>
+                        <div class="resturant-rating">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" role="img" aria-hidden="true" strokeColor="rgba(2, 6, 12, 0.92)" fillColor="rgba(2, 6, 12, 0.92)"><circle cx="10" cy="10" r="9" fill="url(#StoreRating20_svg__paint0_linear_32982_71567)"></circle><path d="M10.0816 12.865C10.0312 12.8353 9.96876 12.8353 9.91839 12.865L7.31647 14.3968C6.93482 14.6214 6.47106 14.2757 6.57745 13.8458L7.27568 11.0245C7.29055 10.9644 7.26965 10.9012 7.22195 10.8618L4.95521 8.99028C4.60833 8.70388 4.78653 8.14085 5.23502 8.10619L8.23448 7.87442C8.29403 7.86982 8.34612 7.83261 8.36979 7.77777L9.54092 5.06385C9.71462 4.66132 10.2854 4.66132 10.4591 5.06385L11.6302 7.77777C11.6539 7.83261 11.706 7.86982 11.7655 7.87442L14.765 8.10619C15.2135 8.14085 15.3917 8.70388 15.0448 8.99028L12.7781 10.8618C12.7303 10.9012 12.7095 10.9644 12.7243 11.0245L13.4225 13.8458C13.5289 14.2757 13.0652 14.6214 12.6835 14.3968L10.0816 12.865Z" fill="white"></path><defs><linearGradient id="StoreRating20_svg__paint0_linear_32982_71567" x1="10" y1="1" x2="10" y2="19" gradientUnits="userSpaceOnUse"><stop stop-color="#21973B"></stop><stop offset="1" stop-color="#128540"></stop></linearGradient></defs></svg>
+                            <span>{{resturant.avgRating}}</span>
+                        </div>
+                        <div class="resturant-description">
+                            Lorem ipsum dolor sit amet. Non recusandae voluptatibus eum libero laborum nam repudiandae esse rem nulla maxime id consequatur enim. Est nobis explicabo et consequatur dignissimos est accusantium molestiae At voluptatem illum rem corporis omnis qui veritatis nisi et necessitatibus quasi!
+                        </div>
+                        <div class="resturant-location">{{resturant.locality}}</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,313 @@
+[
+    {
+        "id": "577513",
+        "name": "Barbeque Nation",
+        "cloudinaryImageId": "gf7djil2q2o5ncauzyfo",
+        "locality": "Shristi Nagar Road",
+        "areaName": "Ushagram",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "North Indian",
+            "Barbecue",
+            "Biryani",
+            "Kebabs",
+            "Mughlai",
+            "Desserts"
+        ]
+    },
+    {
+        "id": "262364",
+        "name": "Kolkata Arsalan Biryani",
+        "cloudinaryImageId": "9c7eacf3fbd96dd5b19d50d84040e5ec",
+        "locality": "Vivekananda Sarani",
+        "areaName": "Munshi Bazar",
+        "avgRating": 3.6,
+        "isOpen": true,
+        "cuisines": [
+            "Biryani",
+            "Mughlai"
+        ]
+    },
+    {
+        "id": "506414",
+        "name": "Mama Mia! - Italian Ice Creams & Cakes",
+        "cloudinaryImageId": "6c689815912468b32c212ff18b8cb813",
+        "locality": "Sb Ghorai Road",
+        "areaName": "Ushagram",
+        "avgRating": 4.5,
+        "isOpen": true,
+        "cuisines": [
+            "Ice Cream",
+            "Desserts",
+            "Bakery"
+        ]
+    },
+    {
+        "id": "167578",
+        "name": "KFC",
+        "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+        "locality": "Galaxy Mall",
+        "areaName": "Ushagram",
+        "avgRating": 4.2,
+        "isOpen": true,
+        "cuisines": [
+            "Burgers",
+            "Biryani",
+            "American",
+            "Snacks",
+            "Fast Food"
+        ]
+    },
+    {
+        "id": "171164",
+        "name": "Kolkata Royal Biryani House ",
+        "cloudinaryImageId": "dcvwz2e8ysz8wye9vltl",
+        "locality": "Dildar Nagar",
+        "areaName": "Asansol Locality",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "Biryani",
+            "Indian",
+            "Mughlai"
+        ]
+    },
+    {
+        "id": "502241",
+        "name": "Wow! Momo",
+        "cloudinaryImageId": "0984acc0ed7b914206dbbcb90297becc",
+        "locality": "Gt  Road",
+        "areaName": "Ushagram",
+        "avgRating": 4.2,
+        "isOpen": true,
+        "cuisines": [
+            "Tibetan",
+            "Healthy Food",
+            "Asian",
+            "Chinese",
+            "Snacks",
+            "Continental",
+            "Desserts",
+            "Beverages"
+        ]
+    },
+    {
+        "id": "438868",
+        "name": "One Bite",
+        "cloudinaryImageId": "0b221e3bb3de162c515b38a6723ed25f",
+        "locality": "Gt Road",
+        "areaName": "ushagram",
+        "avgRating": 4.1,
+        "isOpen": true,
+        "cuisines": [
+            "Fast Food",
+            "Italian",
+            "Snacks",
+            "Beverages"
+        ]
+    },
+    {
+        "id": "171006",
+        "name": "Haldiram's Prabhuji",
+        "cloudinaryImageId": "bv991lrf91cg1zd1p3du",
+        "locality": "Pathak Bari",
+        "areaName": "Ushagram",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "Sweets",
+            "Snacks",
+            "South Indian"
+        ]
+    },
+    {
+        "id": "241466",
+        "name": "Baskin Robbins - Ice Cream Desserts",
+        "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
+        "locality": "Shristinagar",
+        "areaName": "Ushagram",
+        "avgRating": 4.5,
+        "isOpen": true,
+        "cuisines": [
+            "Desserts",
+            "Ice Cream"
+        ]
+    },
+    {
+        "id": "130130",
+        "name": "Domino's Pizza",
+        "cloudinaryImageId": "fl6yyhtq9nrgeqcmlxpc",
+        "locality": "Sentrum Mall",
+        "areaName": "Kanyapur",
+        "avgRating": 4.2,
+        "isOpen": true,
+        "cuisines": [
+            "Pizzas",
+            "Italian",
+            "Pastas",
+            "Desserts"
+        ]
+    },
+    {
+        "id": "577514",
+        "name": "UBQ by Barbeque Nation",
+        "cloudinaryImageId": "qynrcf1y6uhdyal61lsk",
+        "locality": "Shristi Nagar Road",
+        "areaName": "Ushagram",
+        "avgRating": 3.9,
+        "isOpen": true,
+        "cuisines": [
+            "North Indian",
+            "Barbecue",
+            "Biryani",
+            "Kebabs",
+            "Mughlai",
+            "Desserts"
+        ]
+    },
+    {
+        "id": "428346",
+        "name": "Cafe Coffee Day",
+        "cloudinaryImageId": "ondznljjikkxtep3yurr",
+        "locality": "Asansol Sentrum Mall",
+        "areaName": "Shristinagar",
+        "avgRating": 4.1,
+        "isOpen": true,
+        "cuisines": [
+            "Beverages",
+            "Cafe",
+            "Snacks",
+            "Desserts",
+            "Burgers",
+            "Ice Cream",
+            "Bakery",
+            "Fast Food"
+        ]
+    },
+    {
+        "id": "411701",
+        "name": "Mio Amore - The Cake Shop",
+        "cloudinaryImageId": "8bf25e6cafe30c7e7c9c8f31f628fe96",
+        "locality": "Gt Road",
+        "areaName": "BHEL",
+        "avgRating": 4.3,
+        "isOpen": true,
+        "cuisines": [
+            "Desserts",
+            "Bakery",
+            "Snacks"
+        ]
+    },
+    {
+        "id": "349073",
+        "name": "Kolkata Ashirwad Biryani",
+        "cloudinaryImageId": "j1qkjgiy8qmnzpnqyegq",
+        "locality": "Shristinagar",
+        "areaName": "Asansol Locality",
+        "avgRating": 3.7,
+        "isOpen": true,
+        "cuisines": [
+            "Biryani",
+            "North Indian",
+            "Indian"
+        ]
+    },
+    {
+        "id": "131033",
+        "name": "Sarkar's Kitchen",
+        "cloudinaryImageId": "micbvgp9xhiwatty6ctf",
+        "locality": "Burnpur",
+        "areaName": "Asansol Locality",
+        "avgRating": 4,
+        "isOpen": true,
+        "cuisines": [
+            "Indian",
+            "Bengali",
+            "Chinese",
+            "Tandoor"
+        ]
+    },
+    {
+        "id": "134227",
+        "name": "Kolkata Biryani And Fast Food Corner",
+        "cloudinaryImageId": "ya5anot2pmtz0ukflia2",
+        "locality": "Sb Gorai Road",
+        "areaName": "Asansol Court Area",
+        "avgRating": 3.9,
+        "isOpen": true,
+        "cuisines": [
+            "Biryani",
+            "Indian",
+            "Mughlai"
+        ]
+    },
+    {
+        "id": "193195",
+        "name": "Barrel House",
+        "cloudinaryImageId": "gtwg0l3pezrorxlmsvge",
+        "locality": "Apcar Garden",
+        "areaName": "Ushagram",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "North Indian",
+            "Chinese",
+            "Biryani",
+            "Tandoor"
+        ]
+    },
+    {
+        "id": "244409",
+        "name": "Calcutta Sweets",
+        "cloudinaryImageId": "gq0qzjpshqfot4q7jfcl",
+        "locality": "Apcar Garden",
+        "areaName": "Munshi Bazar",
+        "avgRating": 4.1,
+        "isOpen": true,
+        "cuisines": [
+            "Sweets"
+        ]
+    },
+    {
+        "id": "266443",
+        "name": "Ashok Chat Corner",
+        "cloudinaryImageId": "j0auvdyfbl8vb0ensrk5",
+        "locality": "Burnpur Road",
+        "areaName": "Rabindra Nagar",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "Chinese",
+            "Chaat"
+        ]
+    },
+    {
+        "id": "286751",
+        "name": "Delhi Hotel",
+        "cloudinaryImageId": "yzoze3e38khnvshupd6b",
+        "locality": "Ushagram",
+        "areaName": "Pathak Bari",
+        "avgRating": 3.8,
+        "isOpen": true,
+        "cuisines": [
+            "North Indian",
+            "Chinese",
+            "Biryani",
+            "Tandoor"
+        ]
+    },{
+        "id": "41350",
+        "name": "Burger King",
+        "locality": "Ushagram",
+        "areaName": "Sector 35",
+        "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+        "avgRating": 4.1,
+        "isOpen": true,
+        "cuisines": [
+            "Burgers",
+            "American"
+        ]
+    }
+
+]
